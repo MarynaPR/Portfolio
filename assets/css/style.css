@@ -162,30 +162,32 @@ margin-bottom: 10px;
 .grid-item h3 {
     font-size: 2rem;
 }
-
-.section {
-    padding: 15px;
-}
-.section-title {
-    font-size: 48px;
-    border-bottom: 3px solid;
-    color: var(--secondary-color);
-    text-align: center;
-    margin: 0 auto 20px auto;
-    padding-bottom: 20px;
-    width: 30%;
-}
-
-.img { 
-    background-image: url(../images/self.jpeg);
-    width: 100%;
-    text-align: left;
-}
-.flex-row {
+.contact address {
     display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+.contact address a {
+    color: var(--primary-color-transparent);
+    padding: 10px;
+    text-decoration: none;
+    font-size: 15px;
+    font-style: italic;
+    display: inline-block;
+    margin: 0.1rem 0 0 0.1rem;
+    transition: all 0.6s ease-in;
+    background-position: bottom;
+    background-size: 100% 10px;
+    background-repeat: no-repeat;
+    background-image: linear-gradient(300deg, var(--primary-color) 0%, var(--secondary-color)100%);
+}
+.contact address a:hover {
+    background-size: auto;
+    color: var(--primary-color);
 }
 
-.project {
+/*.project {
     margin: 20px;
     background: var(--secondary-color);
     color: var(--primary-color);
@@ -201,15 +203,15 @@ margin-bottom: 10px;
     position: relative;
     background-position: top;
     overflow: hidden;
-}
+} */
 .project-1 {
  background-image: url(../images/hero-bg\ copy.jpg);
 }
 .project-2 {
-    background-image: url(../images/digital-marketing-meeting\ copy.jpg)
+ background-image: url(../images/digital-marketing-meeting\ copy.jpg)
 }
 .project-3 {
-    background-image: url(../images/code.jpeg);
+ background-image: url(../images/code.jpeg);
 
 }
 
