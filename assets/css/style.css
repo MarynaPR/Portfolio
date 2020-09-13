@@ -70,6 +70,25 @@ div {
     padding: 20px;
 }
 
+.about-me {
+    margin: 25px 0;
+    padding: 10px 0;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: stretch;
+    justify-content: space-between;
+  }
+  
+.about-me > h2 {
+    flex: 0 0 20%;
+    text-align: right;
+    padding-right: 15px;
+    border-right: 4px solid var(--primary);
+    font-size: 4vw;
+    line-height: 1.1;
+  }
+
 .intro {
     background-image: var(--secondary-color);
     background-size: cover;
@@ -114,6 +133,7 @@ footer h2 {
 .img { 
     background-image: url(../images/self.jpeg);
     width: 100%;
+    text-align: left;
 }
 .flex-row {
     display: flex;
@@ -160,18 +180,6 @@ footer h2 {
     grid-template-columns: repeat(3, 1fr);
     grid-auto-rows: minmax(200px, 1fr);
 }
-footer {
-        background: var(--secondary-color-transparent);
-        width: 100%;
-        padding: 20px 35px;
-        justify-content: space-between;
-        flex-wrap: wrap;
-        display: flex;
-}
-footer h2 {
-        font-size: 30px;
-        margin: 0;
-}
 @media screen and (max-width: 980px) {
     header {
         padding-bottom: 0;
@@ -200,10 +208,9 @@ footer h2 {
 
 }
 @media screen and (max-width: 768px) {
+
     about {
         padding: 30px 15px;
-    }
-
     }
     .img {
         size: 200px;
@@ -223,6 +230,7 @@ footer h2 {
         writing-mode: unset;
         grid-column: 1 / -1;
         grid-row: -1;
+    }
     }
 @media screen and (max-width: 575px) {
     .about-me {
