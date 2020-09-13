@@ -6,7 +6,7 @@
 /*featured colors*/
 :root {
     --primary-color: whitesmoke;
-    --secondary-color: rgb(49, 43, 43);
+    --secondary-color: grey;
     --primary-color-transparent: black;
     --secondary-color-transparent: darkgrey;
 }
@@ -71,6 +71,18 @@ div {
     border: 3px solid var(--secondary-color);
     padding: 20px;
 }
+footer {
+    background: var(--secondary-color-transparent);
+    width: 100%;
+    padding: 20px 35px;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    display: flex;
+}
+footer h2 {
+    font-size: 30px;
+    margin: 0;
+}
 .intro {
     background-image: var(--secondary-color-transparent);
     background-size: cover;
@@ -86,20 +98,6 @@ div {
 .intro div {
     flex: 0 0 95%;
 }
-
-.page-section h2 {
-    margin: 0;
-    padding: 10px 10px;
-    font-size: 3rem;
-    line-height: 2;
-    display: inline;
-    flex-direction: row;
-    flex-wrap: wrap;
-    align-items: stretch;
-    justify-content: space-between;
-    background-color: var(--primary-color);
-    color: var(--secondary-color);
-  }
 .page-wrapper {
       margin-left: auto;
       margin-right: auto;
@@ -113,22 +111,58 @@ div {
     flex-wrap: wrap;
     justify-content: space-around;
 }
-p {
+.page-section h2 {
+    margin: 0;
+    padding: 10px 10px;
+    font-size: 3rem;
+    line-height: 2;
+    display: inline;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: stretch;
+    justify-content: space-between;
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+}
+.page-section > div {
+    flex: 0 0 80%;
+}
+.page section p {
 text-align: right;
+margin-bottom: 10px;
+}
+.grid-container {
+    display: grid;
+    column-gap: 5px;
+    row-gap: 5px;
+    grid-auto-flow: dense;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: minmax(100px, 1fr);
+}
+.grid-item {
+    border: 3px solid var(--secondary-color-transparent);
+    grid-column: span 4;
+    background-color: var(--secondary-color);
+    min-height: 200px;
+    padding: 0 0 10px 0;
+    background-size: 100%;
+    transition: all 0.6s;
+    font-size: 10rem;
+}
+.grid-item:first-child {
+    grid-column: span 6;
+    grid-row: 2;
+}
+.grid-item:hover {
+    background-color: var(--secondary-color-transparent);
+}
+.grid-item div {
+    background-color: var(--primary-color-transparent);
+}
+.grid-item h3 {
+    font-size: 2rem;
 }
 
-footer {
-    background: var(--secondary-color-transparent);
-    width: 100%;
-    padding: 20px 35px;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    display: flex;
-}
-footer h2 {
-    font-size: 30px;
-    margin: 0;
-}
 .section {
     padding: 15px;
 }
@@ -178,14 +212,7 @@ footer h2 {
     background-image: url(../images/code.jpeg);
 
 }
-.grid-container {
-    display: grid;
-    column-gap: 5px;
-    row-gap: 5px;
-    grid-auto-flow: dense;
-    grid-template-columns: repeat(3, 1fr);
-    grid-auto-rows: minmax(200px, 1fr);
-}
+
 @media screen and (max-width: 980px) {
     header {
         padding-bottom: 0;
