@@ -5,7 +5,7 @@
 }
 :root {
     --primary-color: whitesmoke;
-    --secondary-color: darkslategray;
+    --secondary-color: rgb(49, 43, 43);
     --primary-color-transparent: black;
     --secondary-color-transparent: darkgrey;
 }
@@ -66,9 +66,23 @@ h1 {
 div {
     font-family: verdana;
     font-size: 30px;
-    border: 3px solid darkslategray;
+    border: 3px solid var(--secondary-color);
     padding: 20px;
 }
+
+.intro {
+    background-image: var(--secondary-color);
+    background-size: cover;
+    background-position: center;
+    background-blend-mode: soft-light;
+    min-height: 30vh;
+    color: var(--primary-color-transparent);
+    padding: 5% 10%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    text-align: left;
+  }
 .intro {
     background-size: cover;
     text-align: right;
@@ -90,7 +104,7 @@ text-align: right;
 }
 
 .img { 
-    background-image: url(../assets.css/IMG_8886.jpeg);
+    background-image: url(../images/IMG_7882.jpeg);
     width: 100%;
 }
 .flex-row {
