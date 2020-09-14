@@ -5,8 +5,8 @@
 }
 /*featured colors*/
 :root {
-    --primary-color: whitesmoke;
-    --secondary-color: grey;
+    --primary-color: grey; 
+    --secondary-color: whitesmoke;
     --primary-color-transparent: black;
     --secondary-color-transparent: darkgrey;
 }
@@ -18,8 +18,11 @@ body {
     margin: 0;
     padding: 0;
 }
+h1, p {
+    margin: 0;
+}
 header {
-    padding: 10px 15px;
+    padding: 10px 10% 15px 0;
     justify-content: space-between;
     flex-wrap: wrap; 
     position: sticky;
@@ -27,18 +30,23 @@ header {
     background-color: var(--secondary-color-transparent);
     align-items: center;
     display: flex; 
-    box-shadow: var(--primary-color) 
+    box-shadow: 0 10px 20px var(--primary-color);
+    flex-direction: row;
 }
 header h1 {
     font-weight: bold;
+    font-size: medium;
+    line-height: 2;
     margin: 0;
     font-size: 30px;
-    color: var(--secondary-color-transparent);
+    color: var(--primary-color-transparent);
+    background-color: var(--primary-color-transparent);
+    padding: 5px 2% 5px 5%;
 }
 nav {
     display: flex;
     flex-direction: row;
-    margin: 10px 0;
+    /*margin: 10px 0;*/
     flex-wrap: wrap;
 }
 
@@ -109,7 +117,6 @@ footer h2 {
 .page-section {
     width: 100%;
     margin: 0 auto;
-    display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
 }
