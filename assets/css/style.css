@@ -214,7 +214,9 @@ margin-bottom: 10px;
 }
 .project-3 {
  background-image: url(../images/code.jpeg);
-
+}
+.img-self {
+    background-image: url(../images/self.jpeg)
 }
 
 @media screen and (max-width: 980px) {
