@@ -4,7 +4,8 @@
 # Portfolio
 ## Description 
 
-This application demonstrates usage of Flexbox in the Header, Flex in Navigation, Footer and Hero Sections. Media queries are introduced to better serve different screen sizes. Grid Alignment featured in the main section. 
+This application was created to display portfolio work. Media queries are introduced to better serve different screen sizes. Grid alignment featured in the main section. 
+
 ## Technology Used
 * HTML5
 * CSS
