@@ -249,7 +249,10 @@ background-image: url(../images/word.png);
 background-image: url(../images/hero.png);
 }
 
-.project-4{
+.project-4 {
+    background-image: url(../images/screenshot4.png);
+}
+.project-5 {
     background-color: grey;
 }
 
@@ -306,7 +309,7 @@ background-image: url(../images/hero.png);
     }
     .contact address {
         flex-direction: column;
-        align-item: flex-start;
+        /* align-item: flex-start; */
     }
 }
 
